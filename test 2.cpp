@@ -121,7 +121,21 @@ void intopostfix(string s)
     } 
       
     cout << ns << endl; 
-  
+  ..
+	  int value;
+	node*nextnode;
+	int size;
+	public:
+		void setvalue(int m)
+		{
+		value=m;	
+		}
+		void setnextnode(node *nn)
+		{
+			nextnode=nn;
+		}
+		int getvalue()
+	  //
 } 
 int main() 
 { 
