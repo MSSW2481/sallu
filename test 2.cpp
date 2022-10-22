@@ -60,6 +60,43 @@ class stack
 		}
 		
 };
+class stack
+{
+	node *top;
+	int size;
+	public:
+		void push(int m)
+		{
+		if(size==0)
+		{
+			node *newnode=new node;
+			newnode->setvalue(m);
+			top->setnextnode(0);
+			top=newnode;
+		}
+		else
+		{
+		
+					node *newnode=new node;
+					newnode->setvalue(m);
+					newnode->setnextnode(top);
+					top=newnode;
+						
+		}
+				
+			}
+		
+		int pop()
+		{
+		
+		int	x=top->getvalue();
+			node *p=top;
+			top=top->getnextnode();
+			delete p;
+			return x;
+		}
+		
+};
 int prec(char c) 
 { 
     if(c == '^') 
